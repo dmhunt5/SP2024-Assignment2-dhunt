@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <title>Rubber Duck Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.min.js" integrity="sha384-8EM386r8XMMzwGPUxfGNr6c1wIOYnPQBJ6VFxzKCZeklpQarHoZGB40kdNDA3gYr" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./script.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css" integrity="sha384-b+3kCkBF7JElwswpAsmVFMmrPhoYrpI5w68/JyidGsEYjaPuo0WDeg5Hx6YXxZqs" crossorigin="anonymous">
+
+</head>
+
+<body id="background" onload="changeBackground()">
+
+    <div class="center">
+
+        <h1 onclick="changeBackground()">Rubber Duck Search Engine</h1>
+        <textarea id="query"></textarea>
+        <button id="search" class="ui-button ui-corner-all ui-widget" value="Search" onclick="apiSearch()">Search</button>
+        <button id="timebutton" class="ui-button ui-corner-all ui-widget" onclick="getTime()">Check Time</button>
+        <button id="luckbutton" class="ui-button ui-corner-all ui-widget" onclick="lucky()">Feeling lucky?</button>
+
+        <div id="dialog-message" class="ui-dialog"></div>
+        <div id="searchResults"></div>
+
+    </div>
+
+</body>
+
+</html>
